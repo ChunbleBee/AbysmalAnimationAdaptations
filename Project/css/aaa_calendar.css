@@ -1,0 +1,165 @@
+/*
+	CSS155, Final Project: Abysmal Animation Adaptations
+	Author: Ty Williams
+	Date: 08/17/2017
+	
+	File Name: aaa_home.css
+	Supporting Files: aaa_structure.css
+*/
+
+/************************/
+/* Table element Styles */
+/************************/
+table {
+	border: 2px dotted red;
+	border-top: none;
+	
+	margin: auto;
+	margin-bottom: 20px;
+	width: 95%;
+}
+
+table caption {
+	border: 2px dotted red;
+	border-bottom: none;
+}
+
+th, td {
+	border: 1px solid rgb(98, 98, 115);
+}
+
+th {
+	vertical-align: text-top;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+td {
+	vertical-align: top;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+td.blank {
+	background-color: rgba(128, 128, 128, 0.8);
+}
+
+tfoot {
+	text-align: center;
+}
+
+/* #eventsTable element Style*/
+table#eventsTable {
+	font-size: 12pt;
+}
+
+table#eventsTable td {
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 1%;
+	height: 30px;
+}
+
+/* #showTable element Styles */
+table#showTable ul {
+	font-size: 11pt;
+	
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10%;
+}
+
+
+/***************************/
+/* colgroup element styles */
+/***************************/
+/* #eventsTable colgroup styles */
+table#eventsTable col.colHeaders{
+	width: 7%;
+}
+
+table#eventsTable col.colDays{
+	width: 13.29%;
+}
+
+/* #showTable colgroup styles */
+table#showTable col.colHeaders{
+	width: 7%;
+}
+/* As the shows are divided between mondays, tue-thurs, and sat-sun,
+   this grouping gives equal space to each column group. */
+table#showTable col.colMondays {
+	width: 31%;
+}
+
+table#showTable col.colWeekdays{
+	width: 7.75%;
+}
+
+table#showTable col.colWeekends {
+	width: 15.5%;
+}
+
+
+/*************************/
+/* Article element styles*/
+/*************************/
+article#hours {
+	width: 95%;
+	margin: auto;
+	
+	border: 5px groove lightgreen;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+article#hours ul {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5%;
+	
+	list-style-type: square; 
+}
+
+
+/********************/
+/* ul element styles*/
+/********************/
+ul {
+	list-style: none;
+}
+
+/**************************/
+/* Heading element Styles */
+/**************************/
+h1 {
+	font-size: 18pt;
+	font-weight: 800;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	
+	background-color: rgba(0, 0, 0, 0.6);
+	
+	border-bottom: 2px solid grey;
+	border-bottom-left-radius: 10px;
+}
+
+h2, h3 {
+	font-family: Verdana, sans-serif, serif;
+}
+
+h2 {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 5%;
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: left;
+}
+
+h3 {
+	padding-left: 10%;
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: left;
+}

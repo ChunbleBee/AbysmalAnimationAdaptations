@@ -1,0 +1,156 @@
+/*
+	CSS155, Final Project: Abysmal Animation Adaptations
+	Author: Ty Williams
+	Date: 08/17/2017
+	
+	File Name: aaa_home.css
+	Supporting Files: aaa_structure.css
+*/
+/***********************/
+/* Main element Styles */
+/***********************/
+main > article {
+	display: flex;
+	width: 95%;
+	
+	margin: auto;
+	margin-bottom: 20px;
+	
+	border: 2px dotted red;	
+}
+
+main > article > h1,
+article#about aside h1 {
+	padding: 10px;
+	background: black;
+	background: rgba(0, 0, 0, 0.9);
+	
+	text-align: left;
+	font-weight: bold;
+	font-size: 20pt;
+	
+}
+
+/**************************/
+/* Article Element Styles */
+/**************************/
+/* #about Element Styles */
+article#about figure {
+	flex-content: 1;
+	content: "";
+	padding: 10px;
+	width: 40%;
+}
+
+article#about figure figcaption {
+	text-align: center;
+	font-size: 10pt;
+	padding: 5px;
+	background-color: rgba(128, 128, 128, 0.5);
+}
+
+article#about figure img {
+	width: 100%;
+	transition: transform 2s ease-in-out;
+}
+article#about img:hover {
+	transform: rotateY(360deg);
+}
+
+article#about aside {
+	flex-content: 2;
+	margin-right: 0;
+	width: 60%;
+	border-left: 2px dotted red;
+}
+
+article#about h1 {
+	border-bottom: 2px dotted red;
+}
+
+article#about p {
+	word-wrap: break-word;
+	margin: 10px;
+}
+
+/* #reviews element styles */
+article#reviews {
+	display: block;
+}
+
+article#reviews h1 {
+	width: 100%;
+	border-bottom: 2px dotted red;
+}
+
+article#reviews section {
+	max-height: 500px;
+	overflow: auto;
+}
+
+
+/**********************/
+/* Div Element Styles */
+/**********************/
+div.review {
+	max-height: 400px;
+	margin: 10px;
+	border: 2px solid grey;
+	border-radius: 15px 0px 15px 0px;
+	
+	/*Background images set as in-line styles.*/
+	background-size: cover;
+	background-position: center center;
+}
+
+div.review h2 {
+	font-size: 18pt;
+	font-weight: 800;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	
+	background-color: rgba(0, 0, 0, 0.6);
+	
+	border-bottom: 2px solid grey;
+	border-bottom-left-radius: 10px;
+	min-height: 20%;
+}
+
+div.review h2 a {
+	text-decoration: none;
+}
+
+div.review h2 a:hover {
+	text-decoration: overline underline;
+}
+
+div.review > article {
+	max-height: 80%;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+
+/************************/
+/* For Viewport <=480px */
+/************************/
+@media only screen and (max-width: 480px){
+	article#about {
+		display: block;
+	}
+	article#about figure {
+		width: 100%;
+	}
+	article#about aside {
+		width: 100%;
+	}
+	
+	article#about aside {
+		border-left: none;
+	}
+	
+	article#about h1 {
+		border-top: 2px dotted red;
+	}
+}

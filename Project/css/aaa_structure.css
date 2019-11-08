@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+@font-face {
+	/* Font from: https://www.fontsquirrel.com/fonts/atomic-age */
+	font-family: 'atomicage-regular';
+	src: url(atomicage-regular-webfont.woff) format('woff'),
+	     url(atomicage-regular-webfont.ttf) format('ttf');
+}
+
+/*
+	CSS155, Final Project: Abysmal Animation Adaptations
+	Author: Ty Williams
+	Date: 08/17/2017
+	
+	File Name: aaa_structure.css
+	Supporting Files:
+*/
+
+
+/***********************/
+/* HTML Element Styles */
+/***********************/
+html {
+	font-family: Arial, Verdana, Geneva, Sans-Serif;
+	/* defaults all text to light grey */
+	color: rgb(200, 200, 200);
+	/* Image Source: https://i.pinimg.com/originals/7b/4c/14/7b4c14be02c6bd198f853da1fae53dcb.jpg */
+	/* Upresed with waifu2x.co.jp */
+	background-image: url("../images/toshindenBack.png");
+	background-position: center top;
+	
+}
+
+
+/*********************/
+/*Body Style Elements*/
+/*********************/
+body {
+	margin: auto;
+	max-width: 1000px;
+	
+	border: 4px double grey;
+	border-top: none;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+header {
+	width: 100%;
+}
+
+header img {
+	width: 100%;
+}
+
+
+/*********************/
+/* Nav element style */
+/*********************/
+nav {
+	width: 100%;
+	font-size: 19pt;
+}
+
+nav ul {
+	width: 95%;
+	margin: 5px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+nav ul li {
+	display: inline-block;
+	
+	padding-right: 1%;
+	padding-left: 1%;
+	
+	list-style: none;
+	border-right: 1px solid lightgreen;
+	border-left: 1px solid lightgreen;
+	border-radius: 4px;
+}
+
+nav ul li a {
+	color: grey;
+	text-decoration: none;
+	width: 100%;
+}
+
+
+/************************/
+/* Footer Element Style */
+/************************/
+footer {
+	width: 95%;
+	
+	margin: 15px;
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+	
+	text-align: center;
+	font-size: 11pt;
+}
+
+/***********************/
+/* Main element Styles */
+/***********************/
+main {
+	margin-top: 10px;
+	width: 100%;
+	font-size: 14pt;
+}
+
+
+/***************************/
+/* Heading Elements Styles */
+/***************************/
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'atomicage-regular', Verdana, san-serif;
+	color: white;
+}
+
+
+/********************/
+/* a element styles */
+/********************/
+a {
+	/* sets all a links to their parent element's color. */
+	color: inherit;
+}
+
+a:hover {
+	color: red;
+}
+
+/*********************************/
+/* Media: Viewport width <=480px */
+/*********************************/
+@media only screen and (max-width: 480px) {
+	body {
+		width: 460px;
+	}
+}

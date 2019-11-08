@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--
+		CSS155, Final Project: Abysmal Animation Adaptations
+		Author:	Ty Williams
+		Date: 08/23/2017
+
+		File Name:   calendar.html
+		Supporting Files: aaa_structure.css, aaa_calendar.css
+		-->
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Ty Williams" />
+		<meta name="keywords" content="theater, animation, bad, store, date, hours, calendar, time, events, " />
+		
+		<title>Abysmal Animation Adaptations - Home Page</title>
+		
+		<link href="css/aaa_reset.css" rel="stylesheet" />
+		<link href="css/aaa_structure.css" rel="stylesheet" />
+		<link href="css/aaa_calendar.css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<header>
+			<img src="images/header.png" alt="Abysmal Animation Adaptations" usemap="#headMap" />
+			
+			<map name="headMap">
+				<area shape="rect" coords="0,0,100%,100%" href="home.html" alt="Abysmal Animation Adaptations">
+			</map>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a href="home.html" >Home Page</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="calendar.html">Hours/Events</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+			<table id="eventsTable">
+				<caption>
+					<h1>Daily Events Calendar</h1>
+				</caption>
+				
+				<colgroup>
+					<col span="1" class="colHeaders" />
+					<col span="7" class="colDays" />
+				</colgroup>
+				
+				<thead>
+					<th>Day<hr />Week</th>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</thead>
+				
+				<tfoot>
+					<!-- Here for compatibility -->
+				</tfoot>
+				
+				<tbody>	
+					<tr>
+						<th>1</th>
+						
+						<!-- Blanks out the first two non-month days in the calendar -->
+						<td class="blank" colspan="2"></td>
+						
+						<td>First Of Month Sale!</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td rowspan="4">Weekly Movie Club: Awesome Afterwork Anime month</td>
+					</tr>
+					
+					<tr>
+						<th>2</th>
+						
+						<td rowspan="4">Weekly Senior Discout Day</td>
+						<td rowspan="3">Mortal Kombat Monday</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<th>3</th>
+						
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<th>4</th>
+						<td></td>
+						<td colspan="2">Military Appreciation Days</td>
+						<td></td>
+					</tr>
+					
+					<tr>
+						<th>5</th>
+						<td>Mortal Kombat Monday, <br />Finale</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="blank" colspan="2"></td>
+					</tr>
+				</tbody>
+			</table>
+			
+			
+			<table id="showTable">
+				<caption>
+					<h1>Movie Showtimes</h1>
+				</caption>
+				
+				<colgroup>
+					<col span="1" class="colHeaders" />
+					<col span="1" class="colMondays" />
+					<col span="4" class="colWeekdays" />
+					<col span="2" class="colWeekends" />
+				</colgroup>
+				
+				<thead>
+					<th>Day<hr />Week</th>
+					
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+					<th>Sun</th>
+				</thead>
+				
+				<tfoot>
+					<td colspan="8">Theater opens daily at 7PM.</td>
+				</tfoot>
+				
+				<tfoot>
+					<!-- Here for compatibility's sake -->
+				</tfoot>
+				
+				<tbody>
+					<tr>
+						<th>1</th>
+						
+						<!-- Before the month starts -->
+						<td class="blank"></td>
+						
+						<td colspan="4">
+							<div>
+								<h2>Mulan II</h2>
+								<ul>
+									<li>7:00PM to 8:30PM</li>
+									<li>9:30PM to 11:00AM</li>
+								</ul>
+							</div>
+							
+							<div>
+								<h2>Tales From The Cryptkeeper</h2>
+								<h3>Season 1, Ep. 1 - 2</h3>
+								<ul>
+									<li>8:00PM to 9:00PM</li>
+									<li>9:30PM to 10:30PM</li>
+									<li>11:00PM to 12:00AM</li>
+								</ul>
+							</div>	
+						</td>
+						
+						<td colspan="2">
+							<div>
+								<h2>The Animatrix</h2>
+								<ul>
+									<li>7:00PM to 9:00PM</li>
+									<li>10:00PM to 12:00AM</li>
+								</ul>
+							</div>
+							
+							<div>
+								<h2>Tales From The Cryptkeeper</h2>
+								<h3>Season 1, Ep. 3 - 4</h3>
+								<ul>
+									<li>8:00PM to 9:00PM</li>
+									<li>9:30PM to 10:30PM</li>
+									<li>11:00PM to 12:00AM</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<th>2</th>
+						
+						<td>
+							<div>
+								<h2>Mortal Kombat: Defenders Of The Realm</h2>
+								<h3>Season 1, Ep. 7 - 8</h3>
+								<ul>
+									<li>7:00PM to 8:00PM</li>
+									<li>8:30 to 9:30PM</li>
+									<li>10:00PM to 11:00PM</li>
+								</ul>
+							</div>
+							
+							<div>
+								<h2>The Secret Of The Hunchback</h2>
+								<ul>
+									<li>7:00PM to 8:15PM</li>
+									<li>8:45PM to 10:00PM</li>
+									<li>10:30PM to 11:45PM</li>
+								</ul>
+							</div>
+						</td>
+						
+						<td colspan="4">
+							<div id="bat">
+								<h2><a href="reviews/bat.html">Battle Arena Toshinden</a></h2>
+								<h3>OVA, Ep. 1 - 2</h3>
+								<ul>
+									<li>7:00PM to 8:15PM</li>
+									<li>8:45PM to 10:00PM</li>
+									<li>10:30PM to 11:45PM</li>
+								</ul>
+							</div>
+							
+							<div>
+								<h2>Tales From The Cryptkeeper</h2>
+								<h3>Season 1, Ep. 5 - 6</h3>
+								<ul>
+									<li>8:00PM to 9:00PM</li>
+									<li>9:30PM to 10:30PM</li>
+									<li>11:00PM to 12:00AM</li>
+								</ul>
+							</div>
+						</td>
+						
+						<td colspan="2">
+							<div>
+								<h2>Halo: Legends</h2>
+								<ul>
+									<li>7:00PM to 9:15PM</li>
+									<li>9:45PM to 12:00AM</li>
+								</ul>
+							</div>
+							
+							<div>
+								<h2>Tales From The Cryptkeeper</h2>
+								<h3>Season 1, Ep. 7 - 8</h3>
+								<ul>
+									<li>8:00PM to 9:00PM</li>
+									<li>9:30PM to 10:30PM</li>
+									<li>11:00PM to 12:00AM</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<th>3</th>
+						
+						<td>
+							<div>
+								<h2>Mortal Kombat: Defenders Of The Realm</h2>
+								<h3>Season 1, Ep. 9 - 10</h3>
+								<ul>
+									<li>7:00PM to 8:00PM</li>
+									<li>8:30 to 9:30PM</li>
+									<li>10:00PM to 11:00PM</li>
+								</ul>
+							</div>
+						</td>
+						
+						<td colspan="4">
+							<div id="dothack">
+								<h2><a href="reviews/dothack.html">.hack//Beyond The World</a></h2>
+								<ul>
+									<li>7:00PM to 9:30PM</li>
+									<li>10:00PM to 12:00AM</li>
+								</ul>
+							</div>
+							
+							<div>
+								<h2>Tales From The Cryptkeeper</h2>
+								<h3>Season 1, Ep. 9 - 10</h3>
+								<ul>
+									<li>8:00PM to 9:00PM</li>
+									<li>9:30PM to 10:30PM</li>
+									<li>11:00PM to 12:00AM</li>
+								</ul>
+							</div>
+						</td>
+						
+						<td colspan="2">
+							<div>
+								<h2>Ghost In The Shell</h2>
+								<ul>
+									<li>7:00PM to 9:15PM</li>
+									<li>9:45PM to 12:00AM</li>
+								</ul>
+							</div>
+							
+							<div>
+								<h2>Tales From The Cryptkeeper</h2>
+								<h3>Season 1, Ep. 11 - 12</h3>
+								<ul>
+									<li>8:00PM to 9:00PM</li>
+									<li>9:30PM to 10:30PM</li>
+									<li>11:00PM to 12:00AM</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<th>4</th>
+						<td>
+							<div>
+								<h2>Mortal Kombat: Defenders Of The Realm</h2>
+								<h3>Season 1, Ep. 11 - 12</h3>
+								<ul>
+									<li>7:00PM to 8:00PM</li>
+									<li>8:30 to 9:30PM</li>
+									<li>10:00PM to 11:00PM</li>
+								</ul>
+							</div>
+							
+							<div>
+								<h2>The Secret Of Anastacia</h2>
+								<ul>
+									<li>7:00PM to 8:15PM</li>
+									<li>8:45PM to 10:00PM</li>
+									<li>10:30PM to 11:45PM</li>
+								</ul>
+							</div>
+						</td>
+						
+						<td colspan="4">
+							<div id="ffsw">
+								<h2><a href="reviews/ffsw.html">Final Fantasy: The Spirits Within</a></h2>
+								<ul>
+									<li>7:00PM to 8:45PM</li>
+									<li>9:15PM to 11:00PM</li>
+								</ul>
+							</div>
+							
+							<div>
+								<h2>Tales From The Crypt Keeper</h2>
+								<h3>Season 1 Finale, Ep. 13</h3>
+								<ul>
+									<li>8:00PM to 9:00PM</li>
+									<li>9:30PM to 10:30PM</li>
+									<li>11:00PM to 12:00AM</li>
+								</ul>
+							</div>
+						</td>
+						
+						<td colspan="2">
+							<h2>No Showings:</h2>
+							<h3>Theater Closed for Maintainence.</h3>
+						</td>
+					</tr>
+					
+					<tr>
+						<th>5</th>
+						
+						<td>
+							<div>
+								<h2>Mortal Kombat: Defenders Of The Realm</h2>
+								<h3>Season 1 Finale, Ep. 13</h3>
+								<ul>
+									<li>7:00PM to 7:45PM</li>
+									<li>8:15 to 9:00PM</li>
+									<li>9:30PM to 10:15PM</li>
+									<li>10:45PM to 11:30PM</li>
+									<li>11:30PM to 12:15AM</li>
+								</ul>
+							</div>
+							
+							<div>
+								<h2>The Secret Of Mulan</h2>
+								<ul>
+									<li>7:00 to 8:00</li>
+									<li>8:30 to 9:30</li>
+									<li>10:00 to 11:00</li>
+								</ul>
+							</div>
+						</td>
+						
+						<td colspan="3">
+							
+							<div>
+								<h2>Final Fantasy VII: Advent Children</h2>
+								<ul>
+									<li>7:00PM to 8:45PM</li>
+									<li>9:15PM to 11:00PM</li>
+								</ul>
+							</div>
+							
+							<div>
+								<h2>Tales From The Cryptkeeper</h2>
+								<h3>Season 2, Ep. 1 - 2</h3>
+								<ul>
+									<li>8:00PM to 9:00PM</li>
+									<li>9:30PM to 10:30PM</li>
+									<li>11:00PM to 12:00AM</li>
+								</ul>
+							</div>
+							
+						</td>
+						
+						<!-- End of month -->
+						<td colspan="3" class="blank"></td>
+					</tr>
+				</tbody>
+			</table>
+			
+			
+			<article id="hours">
+				<h1>Daily Operation Hours</h1>
+				<ul>
+					<li>Mon-Fri: 3:00PM to 12:00AM</li>
+					<li>Sat-Sun: 12:00PM to 12:00AM</li>
+				</ul>
+			</article>
+			
+		</main>
+		
+		<footer>
+			Abysmal Animation Adaptations &#124; Somewhere, Some place, Some ZIP &#124; <a href="tel:+15555555555">(555)555-5555</a> &#124; <a href="email:ContactUs@aaa.example.com">ContactUs@aaa.example.com</a>
+		</footer>
+	</body>
+</html>

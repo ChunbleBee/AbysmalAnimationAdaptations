@@ -1,0 +1,84 @@
+/*
+	CSS155, Final Project: Abysmal Animation Adaptations
+	Author: Ty Williams
+	Date: 08/19/2017
+	
+	File Name: aaa_reviewCol.css
+	Supporting Files: aaa_structure.css
+*/
+
+/***********************/
+/* Main element Styles */
+/***********************/
+main h1 {
+	width: 95%;
+	margin: auto;
+	margin-bottom: 0px;
+	
+	padding: 10px;
+	background: black;
+	background: rgba(0, 0, 0, 0.9);
+	
+	text-align: center;
+	font-weight: bold;
+	font-size: 20pt;
+	
+	border: 2px dotted red;	
+}
+
+main > section {
+	margin: auto;
+	padding: 5px 0.5% 5px 0.5%;
+	width: 95%;
+	border: 2px dotted red;
+	border-top: 0px dotted red;
+}
+
+
+/* div.review element styles */
+div.review {
+	display: inline-block;
+	
+	margin: 5px 0.5% 5px 0.5%;
+	
+	border: 2px solid grey;
+	border-radius: 15px 0px 15px 0px;
+	width: 48%;
+}
+
+div.review h2 {
+	font-size: 14pt;
+	font-weight: 800;
+	text-align: left;
+	padding-left: 20px;
+	
+	background-color: rgba(0, 0, 0, 0.6);
+	
+	border-bottom: 2px solid grey;
+	border-bottom-left-radius: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	
+	width: 100%;
+}
+
+div.review ul {
+	float: left;
+	
+	margin-left: 15%;
+	list-style: none;
+}
+
+div.review ul::after {
+	clear: both;
+}
+
+/*********************************/
+/* Media: Viewport width <=480px */
+/*********************************/
+@media only screen and (max-width: 480px) {
+	div.review {
+		width: 95%;
+		margin: 5px 2.5% 5px 2.5%;
+	}
+}

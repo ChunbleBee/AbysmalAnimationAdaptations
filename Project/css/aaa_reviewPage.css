@@ -1,0 +1,231 @@
+/*
+	CSS155, Final Project: Abysmal Animation Adaptations
+	Author: Ty Williams
+	Date: 08/21/2017
+	
+	File Name: aaa_reviewPage.css
+	Supporting Files: aaa_structure.css
+*/
+
+/***********************/
+/* Main element Styles */
+/***********************/
+main::after {
+	/* Clear fix. Not sure if necessary, but here JIC. */
+	clear: both;
+}
+
+
+/**************************/
+/* Article element Styles */
+/**************************/
+/*#info element Styles*/
+article#info {
+	float: left;
+	/*@TODO: backCompat*/
+	display: flex;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	width: 60%;
+	border: 2px dotted red;
+	border-top: none;
+}
+
+article#info figure {
+	flex-content: 1;
+	width: 35%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+article#info figure img {
+	display: block;
+	width: 100%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+	transition: transform 3s ease-in-out;
+}
+
+article#info figure img:hover {
+	transform: scale(3) translateX(25%);
+	transition: transform 3s ease-in-out;
+}
+
+article#info figure figcaption {
+	width: 100%;
+	font-size: 10pt;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(128, 128, 128, 0.5);
+}
+
+/* #info aside styles */
+article#info aside {
+	width: 65%;
+}
+
+article#info aside ul {
+	list-style: none;
+	margin-left: 15px;
+}
+
+/* #synopsis element Styles */
+article#synopsis {
+	margin: 0px 2.5% 0px 2.5%;
+	
+	padding: 10px 20px 10px 20px; 
+	
+	border-right: 2px dotted red;
+	border-left: 2px dotted red;
+}
+
+/* #thoughts element styles */
+article#thoughts {
+	margin: 0px 2.5% 0px 2.5%;
+	
+	padding: 10px 20px 10px 20px; 
+	
+	border-left: 2px dotted red;
+	border-right: 2px dotted red;
+}
+
+/* article#final Styles */
+article#final {
+	display: flex;
+	
+	margin: auto;
+	width: 95%;
+	padding: 10px 2% 10px 2%;
+	
+	border: 2px dotted red;
+	border-top: none;
+}
+
+
+/**************/
+/* Div Styles */
+/**************/
+/* #review element styles */
+div#review {
+	float: left;
+	width: 48%; 
+	min-height: 200px;
+	margin: 0px 0px 0px 1%;
+}
+
+div#review figure {
+	margin: 5px;
+	float: right;
+	width: 50%;
+	
+}
+
+div#review figure img {
+	width: 100%;
+}
+
+/* #user element styles */
+div#user {
+	float: right;
+	margin: 0px 1% 0px 0px;
+	width: 48%;
+	padding-bottom: 2.5%;
+}
+
+div#user section {
+	border: 2px solid grey;
+	height: 200px;
+	overflow: auto;
+}
+
+button {
+	margin: 5px 10px 5px 10px;
+}
+
+/* .userReview element styles */
+div.userReview {
+	margin: 5px;
+	padding: 5px;
+	border: 4px groove white;
+	border-radius: 10px;
+	background: black;
+}
+
+div.userReview h3 {
+	text-align: center;
+}
+
+/***********************/
+/* Form Element Styles */
+/***********************/
+form {
+	display: none;
+	margin: 0px 0px 0px 1%;
+	width: 50%;
+}
+
+form div#range input {
+	width: 40%;
+}
+
+/**************************/
+/* heading element styles */
+/**************************/
+h1 {
+	width: 95%;
+	margin: auto;
+	margin-bottom: 0px;
+	
+	padding: 10px;
+	
+	background: black;
+	background: rgba(0, 0, 0, 0.9);
+	
+	text-align: center;
+	font-weight: bold;
+	font-size: 20pt;
+	
+	border: 2px dotted red;
+}
+
+h2 {
+	padding: 10px 0px 10px 0px;
+	font-size: 16pt;
+}
+
+h3 {
+	padding: 5px;
+	font-size: 15pt;
+	width: 100%;
+}
+
+
+/********************/
+/* Viewport <=480px */
+/********************/
+@media only screen and (max-width: 480px) {
+	article#info {
+		clear: both;
+		width: 95%;
+	}
+	
+	article#final {
+		flex-wrap: wrap;
+	}
+	
+	div#review {
+		width: 100%;
+	}
+	
+	div#user {
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	
+	form {
+		display: none;
+		width: 100%;
+	}
+}
